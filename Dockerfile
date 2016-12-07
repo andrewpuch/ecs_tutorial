@@ -13,4 +13,7 @@ ENV APACHE_LOG_DIR /var/log/apache2
 ENV APACHE_LOCK_DIR /var/log/apache2
 ENV APACHE_PID_FILE /var/log/apache2/apache2.pid
 
+# Put the html page on the box
+COPY ./index.html /var/www/html/index.html
+
 EXPOSE 80
